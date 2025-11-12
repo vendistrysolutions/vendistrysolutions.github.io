@@ -1,0 +1,14 @@
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  text-align: center; }
+  .footer_nav li {
+    line-height: 1.25em;
+    padding: 0 0 0.75em 0;
+    width: 100%; }
+    .footer_nav li:last-child {
+      padding-bottom: 0; }
+  .footer_nav li a {
+    display: inline-block; }
