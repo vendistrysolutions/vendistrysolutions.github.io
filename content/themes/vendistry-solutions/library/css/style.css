@@ -4626,7 +4626,9 @@ HEADER STYLES
     z-index: 10 !important;
   }
   .header_nav-wrap .header_nav {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     width: 100% !important;
     margin: 3.5em auto 1.5em auto !important;
     text-align: center !important;
