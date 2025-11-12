@@ -4600,32 +4600,24 @@ HEADER STYLES
 
 /* Stack navigation vertically on smaller screens when sidebar is present */
 @media (max-width: 767px) {
-  .header_nav-wrap .header_nav,
-  .header_nav-wrap.open-menu .header_nav {
+  .header_nav-wrap .header_nav {
     display: block !important;
-    justify-content: unset !important;
-    flex-direction: column !important;
   }
   .header_nav-wrap .header_nav #menu-main-menu,
-  .header_nav-wrap .header_nav .nav.top-nav,
-  .header_nav-wrap.open-menu .header_nav #menu-main-menu,
-  .header_nav-wrap.open-menu .header_nav .nav.top-nav {
-    display: block !important;
+  .header_nav-wrap .header_nav .nav.top-nav {
+    display: flex !important;
     flex-direction: column !important;
-    flex-wrap: nowrap !important;
     gap: 0 !important;
     list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
   }
   .header_nav-wrap .header_nav #menu-main-menu li,
-  .header_nav-wrap .header_nav .nav.top-nav li,
-  .header_nav-wrap.open-menu .header_nav #menu-main-menu li,
-  .header_nav-wrap.open-menu .header_nav .nav.top-nav li {
-    padding: 0 !important;
-    margin: 0 !important;
+  .header_nav-wrap .header_nav .nav.top-nav li {
     display: block !important;
     width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
