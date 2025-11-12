@@ -11,4 +11,6 @@
     .footer_nav li:last-child {
       padding-bottom: 0; }
   .footer_nav li a {
-    display: inline-block; }
+    color: #fff;
+    display: inline-block;
+    font-weight: 400; }
