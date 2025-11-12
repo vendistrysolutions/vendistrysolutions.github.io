@@ -5390,13 +5390,10 @@ FOOTER STYLES
   max-height: 192px;
   padding: 0 10%;
   text-align: left; }
-  .footer_nav li {
+   .footer_nav li {
     line-height: 1.25em;
     padding: 0 0.5em 0.75em 0;
     width: 50%; }
-    .footer_nav li a {
-      color: #fff;
-      font-weight: 400; }
 
 .footer_contact {
   order: 1; }
