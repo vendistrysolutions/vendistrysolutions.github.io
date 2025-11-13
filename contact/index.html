@@ -163,43 +163,84 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <h2 class="wp-block-heading">Ready to talk with a team member?</h2>
 <p>Vendistry Solutions currently serves Tennessee. Outside our service area? Contact us, let’s discuss your needs.</p>
 
-<div class="wp-block-group" style="margin-top: 40px; padding: 40px; background: #f8f9fa; border-radius: 8px;">
-    <form action="https://formsubmit.co/contact@vendistrysolutions.com" method="POST" style="max-width: 600px; margin: 0 auto;">
+<!-- Contact Buttons and Form -->
+<div style="text-align: center; margin: 40px 0;">
+    <!-- Contact Buttons -->
+    <div id="contact-buttons" style="max-width: 400px; margin: 0 auto;">
+        <button id="show-form-btn" class="btn" style="display: block; width: 100%; padding: 15px 30px; margin-bottom: 15px; background: #f01d4f; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: background 0.3s;">
+            Contact Us
+        </button>
+        <a href="tel:4237082058" class="btn" style="display: block; width: 100%; padding: 15px 30px; background: #f01d4f; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; text-align: center; transition: background 0.3s;">
+            Call Now
+        </a>
+    </div>
+    
+    <!-- Contact Form (Hidden by Default) -->
+    <div id="contact-form-container" style="display: none; margin-top: 30px; padding: 40px; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h3 style="text-align: center; margin-bottom: 25px; color: #333;">Send Us a Message</h3>
         
-        <div style="margin-bottom: 20px;">
-            <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Name *</label>
-            <input type="text" id="name" name="name" required placeholder="John Doe" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit;">
-        </div>
+        <form action="https://formsubmit.co/contact@vendistrysolutions.com" method="POST">
+            
+            <div style="margin-bottom: 20px;">
+                <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit; box-sizing: border-box;">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label for="email" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit; box-sizing: border-box;">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label for="phone" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit; box-sizing: border-box;">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label for="company" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your Company" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit; box-sizing: border-box;">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label for="message" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Message *</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your vending needs..." rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+            </div>
+            
+            <button type="submit" style="width: 100%; padding: 15px; background: #f01d4f; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: background 0.3s;">Send Message</button>
+            
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Vendistry Solutions">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+            
+        </form>
         
-        <div style="margin-bottom: 20px;">
-            <label for="email" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Email *</label>
-            <input type="email" id="email" name="email" required placeholder="john@example.com" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit;">
-        </div>
-        
-        <div style="margin-bottom: 20px;">
-            <label for="phone" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit;">
-        </div>
-        
-        <div style="margin-bottom: 20px;">
-            <label for="company" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Company</label>
-            <input type="text" id="company" name="company" placeholder="Your Company" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit;">
-        </div>
-        
-        <div style="margin-bottom: 20px;">
-            <label for="message" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Message *</label>
-            <textarea id="message" name="message" required placeholder="Tell us about your vending needs..." rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit; resize: vertical;"></textarea>
-        </div>
-        
-        <button type="submit" style="width: 100%; padding: 15px; background: #f01d4f; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer; transition: background 0.3s;">Send Message</button>
-        
-        <!-- FormSubmit Configuration -->
-        <input type="hidden" name="_subject" value="New Contact Form Submission - Vendistry Solutions">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_template" value="table">
-        
-    </form>
+        <button id="hide-form-btn" style="display: block; margin: 20px auto 0; padding: 10px 20px; background: transparent; color: #666; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; cursor: pointer;">
+            Cancel
+        </button>
+    </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var showFormBtn = document.getElementById('show-form-btn');
+    var hideFormBtn = document.getElementById('hide-form-btn');
+    var formContainer = document.getElementById('contact-form-container');
+    var buttonsContainer = document.getElementById('contact-buttons');
+    
+    showFormBtn.addEventListener('click', function() {
+        formContainer.style.display = 'block';
+        buttonsContainer.style.display = 'none';
+        formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    
+    hideFormBtn.addEventListener('click', function() {
+        formContainer.style.display = 'none';
+        buttonsContainer.style.display = 'block';
+        buttonsContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+});
+</script>
 
 
 <h3 class="wp-block-heading">No endless phone menus or unanswered emails – at Vendistry Solutions we offer the same customer service we’d want to experience ourselves.</h3>
